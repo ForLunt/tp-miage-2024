@@ -119,7 +119,8 @@ Source : http://leanpub.com/get-your-hands-dirty-on-clean-architecture[Tom Hombe
   - la couche `domain` qui contient les entités (au sens DDD, pas au sens JPA). En général des classes complexes (méthodes riches, relations entre les entités)
 
 *Rappeler en quelques lignes les grands principes de l'architecture hexagonale.*
-Une architecture hexagonale permet de séparer les parties code métier des donné si une des deux est modifier cele n'impactera pas. 
+Une architecture hexagonale permet de séparer les parties code métier des donné si une des deux est modifier cele n'impactera pas. <br>
+ça facilite la maintenance du code et la stabilité<br>
 
 Compléter ce code avec une fonctionnalité de création de `TodoItem`  persisté en base et appelé depuis un endpoint REST `POST /todos` qui :
 
@@ -137,7 +138,7 @@ _Temps estimé : 20 mins_
 
 *Quels types de tests devra-t-on écrire pour les adaptateurs ?* 
 Les types de test écrivable pour les adaptateurs sont les suivant:
-
+<br>
 * Contract
 * Component
 * Integration
