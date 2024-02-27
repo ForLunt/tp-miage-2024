@@ -62,8 +62,11 @@ docker run -it -e POSTGRES_PASSWORD=password -p 5432:5432 postgres
 ```
 *Expliquer cette ligne de commande (y compris les options utilisées)*
 *  `docker run`: lance un contener pour `postgres` on l'initialise avec le mot de passe `POSTGRES_PASSWORD=password`
+
 *  `-it` lance le contener en mode interaction
+
 *  `-e` représente la variable d'environement pour le contener
+
 *  `-p` publie le contener
 
 * Compléter le code manquant dans la méthode `TodoListController.createTodoItem()`
@@ -116,6 +119,7 @@ Source : http://leanpub.com/get-your-hands-dirty-on-clean-architecture[Tom Hombe
   - la couche `domain` qui contient les entités (au sens DDD, pas au sens JPA). En général des classes complexes (méthodes riches, relations entre les entités)
 
 *Rappeler en quelques lignes les grands principes de l'architecture hexagonale.*
+Une architecture hexagonale permet de séparer les parties code métier des donné si une des deux est modifier cele n'impactera pas. 
 
 Compléter ce code avec une fonctionnalité de création de `TodoItem`  persisté en base et appelé depuis un endpoint REST `POST /todos` qui :
 
@@ -132,6 +136,11 @@ _Temps estimé : 20 mins_
 * Implémenter (en junit) des TU portant sur la règle de gestion qui consiste à afficher `[LATE!]` dans la description d'un item en retard de plus de 24h.
 
 *Quels types de tests devra-t-on écrire pour les adaptateurs ?* 
+Les types de test écrivable pour les adaptateurs sont les suivant:
+
+* Contract
+* Component
+* Integration
 
 *S'il vous reste du temps, écrire quelques-uns de ces types de test.*
 
