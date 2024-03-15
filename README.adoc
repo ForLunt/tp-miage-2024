@@ -126,8 +126,8 @@ Source : http://leanpub.com/get-your-hands-dirty-on-clean-architecture[Tom Hombe
 
 *Rappeler en quelques lignes les grands principes de l'architecture hexagonale.*
 
-Une architecture hexagonale permet de séparer les parties code métier des donné si une des deux est modifier cele n'impactera pas. <br>
-ça facilite la maintenance du code et la stabilité<br>
+Une architecture hexagonale permet de séparer les parties code métier des donné si une des deux est modifier cele n'impactera pas.
+ça facilite la maintenance du code et la stabilité
 
 Compléter ce code avec une fonctionnalité de création de `TodoItem`  persisté en base et appelé depuis un endpoint REST `POST /todos` qui :
 
